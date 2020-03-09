@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.UnosStanovaController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="103.0" prefWidth="500.0" text="Unos Stanova" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="500.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="201.0" text="Naslov:" />
+                  <TextField fx:id="naslovTextField" prefHeight="29.0" prefWidth="135.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="500.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="201.0" text="Opis:" />
+                  <TextField fx:id="opisTextField" prefHeight="29.0" prefWidth="135.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="500.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="201.0" text="Kvadratura:" />
+                  <TextField fx:id="kvadraturaTextField" prefHeight="29.0" prefWidth="135.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="500.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="201.0" text="Stanje:" />
+                  <ComboBox fx:id="stanjeComboBox" prefHeight="30.0" prefWidth="137.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="500.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="201.0" text="Cijena:" />
+                  <TextField fx:id="cijenaTextField" prefHeight="29.0" prefWidth="135.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#unesiButton" prefHeight="29.0" prefWidth="74.0" text="Unesi" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
